@@ -1,20 +1,47 @@
 
+body {
+	width:100%;
+	height:2000px;
+}
+
+/* Foundation fixes */
+.row {
+	max-width:100%;
+}
+
 /* Nav styling */
+
+div.nav-row {
+	position:fixed;
+	text-align:right;
+}
 .nav-toggle {
 	font-size: 2em;
-	position: fixed;
 	right: 0;
 	margin:10px;
 	margin-top:5px;
 }
 
 .nav-collapse.opened {
-	background:black;
 	max-height:550px;
 }
 
 .nav-collapse.opened a {
 	margin-left:10px;
+}
+
+a#home {
+	float:left;
+}
+
+/* landscape phone larger (>= 480px < 960px) */
+@media screen and (min-width:30em) {
+	.nav-collapse li {
+		display: inline;
+	}
+	div.nav-row {
+		background:transparent;
+	}
 }
 
 .nav-collapse li {

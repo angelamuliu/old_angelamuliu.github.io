@@ -11,21 +11,21 @@
 
 	<script src="JS/responsive-nav.js"></script>
     <script src="JS/vendor/modernizr.js"></script>
+    <script src="JS/vendor/jquery.js"></script>
     <script src="JS/myJS.js"></script>
 </head>
 <body>
 
-	<div class="row">
+	<div class="row nav-row">
+		<a href="index.html" id="home">Home</a>
+		<nav class="nav-collapse">
+		  <ul>
+		    <li><a href="#projects">Projects</a></li>
+		    <li><a href="#about">About</a></li>
+		    <li><a href="#contact">Contact</a></li>
+		  </ul>
+		</nav>
 	</div>
-
-	<nav class="nav-collapse">
-	  <ul>
-	  	<li><a href="#home">Home</a></li>
-	    <li><a href="#projects">Projects</a></li>
-	    <li><a href="#about">About</a></li>
-	    <li><a href="#contact">Contact</a></li>
-	  </ul>
-	</nav>
 
 <a id="home"></a>
 
@@ -39,7 +39,6 @@
 
 <!-- . . . . . . . . . . Plugins . . . . . . . . . . -->
 
-<script src="JS/vendor/jquery.js"></script>
 <script src="JS/foundation.min.js"></script>
 <script src="JS/afterJS.js"></script>
 

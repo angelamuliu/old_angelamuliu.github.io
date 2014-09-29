@@ -55,23 +55,34 @@ a#home {
 .nav-collapse li {
 	padding:10px;
 }
-
-
+.project {
+	margin-bottom:10px;
+	padding:0;
+}
+.project_name{
+	position:absolute;
+	width:100%;
+	text-align:center;
+	padding-top:15px;
+	padding-left:0;
+	padding-right:0;
+	display:none;
+}
 
 
 
 
 
 /* min-width: If device width is greater than or equal to... 480 px */
-@media only screen and (min-width:30em) {
+@media only screen and (min-width:40em) {
 	.nav-collapse li {
 		display: inline;
 	}
 	div.nav-row {
 		background:transparent;
 	}
-
-	section#home {
+	.project {
+		padding:0;
 	}
 }
 
@@ -80,7 +91,8 @@ a#home {
 	.project {
 		height:75px;
 		width:100%;
-		background-position: center center;
+		/* Crops image into container's new size */
+		background-position:center center;
     	background-repeat: no-repeat;
     	overflow: hidden;
 	}

@@ -8,5 +8,8 @@ $(document).ready( function() {
 	})
 
 
+	var greetings= ["Aloha!", "Welcome!", "Salutations!", "Wassup?", "Howdy!", "Ahoy!"];
+	var randomnumber = Math.ceil(Math.random()*5);
+	$("#greet").html("<h1>"+greetings[randomnumber]+"</h1>");
 
 })

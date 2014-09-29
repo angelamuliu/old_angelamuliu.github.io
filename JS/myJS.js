@@ -5,6 +5,7 @@ $(document).ready( function() {
 	$(window).scroll( function() {
 		var scrollposition = $(window).scrollTop();
 		$(".nav-row")[0].style.background="rgba(0,0,0," + scrollposition/120 + ")";
+		console.log($(window).width());
 	})
 
 	// A different greeting every time you come back! : )
@@ -12,12 +13,16 @@ $(document).ready( function() {
 	var randomnumber = Math.ceil(Math.random()*5);
 	$("#greet").html("<h1>"+greetings[randomnumber]+"</h1>");
 
-	$(".project").hover(
+	if ($(window).width() >= 600) { // Web: Hover enabled for project gallery
+		$(".project").hover(
 		function() {
-			$(this).find(".project_name").slideDown(400);
+			$(this).find(".project_name").fadeIn(300);
 		}, function() {
-			$(this).find(".project_name").slideUp(400);
+			$(this).find(".project_name").fadeOut(200);
 		})
+	} else {
+		$(".project_name").show(); // Mobile: Don't deal with hover, just show it
+	}
 
 
 })

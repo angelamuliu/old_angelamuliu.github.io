@@ -73,7 +73,7 @@ a#home {
 
 
 
-/* min-width: If device width is greater than or equal to... 480 px */
+/* min-width: If device width is greater than or equal to... 40em */
 @media only screen and (min-width:40em) {
 	.nav-collapse li {
 		display: inline;
@@ -83,6 +83,10 @@ a#home {
 	}
 	.project {
 		padding:0;
+	}
+	.project_name {
+		height:100%;
+		background-color:rgba(255,0,0,0.5); /* 50% red for now */
 	}
 }
 
@@ -96,7 +100,6 @@ a#home {
     	background-repeat: no-repeat;
     	overflow: hidden;
 	}
-
 	.project img {
 		min-height: 100%;
    		min-width: 100%;
@@ -107,6 +110,7 @@ a#home {
 	   /* modern browsers */
 	   opacity: 0;
 	}
+
 }
 
 /* Home */

@@ -2,10 +2,10 @@
 
 $(document).ready( function() {
 
-	// Change color of scroll as I go down
+	// Change color of scroll to an almost black as I go down
 	$(window).scroll( function() {
 		var scrollposition = $(window).scrollTop();
-		$(".nav-row")[0].style.background="rgba(0,0,0," + scrollposition/120 + ")";
+		$(".nav-row")[0].style.background="rgba(34,38,43," + scrollposition/120 + ")";
 		console.log($(window).width());
 	})
 

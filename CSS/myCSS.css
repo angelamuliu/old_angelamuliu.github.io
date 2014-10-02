@@ -1,26 +1,83 @@
+/* ======================== Fonts and Color Sets ======================== */
+
+/*
+salmon: #FF3F40;
+deep-gray: #33363C;
+almost-black: #22262B;
+*/
+
+@font-face {
+	font-family:Aleo-Light;
+	src: url(fonts/Aleo-Light.otf);
+}
+@font-face {
+	font-family:Aleo-LightItalic;
+	src: url(fonts/Aleo-LightItalic.otf);
+}
+@font-face {
+    font-family: Aleo-Regular;
+    src: url(fonts/Aleo-Regular.otf);
+}
+@font-face {
+	font-family:Aleo-Italic;
+	src: url(fonts/Aleo-Italic.otf);
+}
+@font-face {
+	font-family:Aleo-Bold;
+	src: url(fonts/Aleo-Bold.otf);
+}
+@font-face {
+	font-family:Aleo-BoldItalic;
+	src: url(fonts/Aleo-BoldItalic.otf);
+}
+@font-face {
+	font-family: Nexa-Bold;
+	src: url(fonts/Nexa-Bold.otf);
+}
+@font-face {
+	font-family: Nexa-Light;
+	src: url(fonts/Nexa-Light.otf);
+}
 
 /* ======================== General Styling ======================== */
 
 body {
 	width:100%;
 }
-
 h1 {
+	text-transform: uppercase;
+	font-family:Nexa-Bold;
 	margin:0;
 }
-
+p {
+	font-size:14px;
+	font-family:Aleo-Light;
+}
+em {
+	letter-spacing:0.5px;
+	font-family:Aleo-LightItalic;
+}
 section {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	width:100%;
 }
-
 div.content {
 	padding-top:20px;
 	padding-bottom:20px;
 }
 
-.hide { display:none; }
+.hide { display:none;}
+
+.vert_align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+}
+.vert {
+	min-width:50%;
+}
 
 /* ======================== Foundation fixes ======================== */
 .row {
@@ -34,8 +91,11 @@ div.nav-row {
 	position:fixed;
 	text-align:right;
 	z-index:5;
+	padding-top:8px;
+	padding-bottom:8px;
+	border-bottom:thin ridge rgba(255,255,255,0.15);
 }
-.nav-toggle {
+div.nav-row a.nav-toggle {
 	font-size: 2em;
 	right: 0;
 	margin:10px;
@@ -53,22 +113,35 @@ a#home {
 .nav-collapse li {
 	padding:10px;
 }
+div.nav-row a {
+	font-family:Nexa-Light;
+	color:white;
+	letter-spacing:0.2px;
+	font-size:12px;
+	text-transform:uppercase;
+}
+div.nav-row a:hover {
+	color: #FF3F40;
+}
 
 /* ======================== Home ======================== */
 
 section#home {
-	background-image: url('img/bcg_slide-1.jpg');
+	/*background-image: url('img/bcg_slide-1.jpg');*/
+	background-color: #33363C;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	width:100%;
 }
-
 div#greet {
 	min-height:50px;
 }
-
 div#home {
 	text-align:center;
+	color:white;
+}
+div#home h1 {
+	color: #FF3F40;
 }
 
 /* ======================== Projects ======================== */
@@ -120,6 +193,13 @@ section#contact {
 /* ------------------------ MEDIUM-LARGE ------------------------ */
 /* min-width: If device width is greater than or equal to... 40em */
 @media only screen and (min-width:40em) {
+	section#home {
+		min-height:600px;
+	}
+	section#home div.vert_align {
+		min-height:600px;
+	}
+
 	.nav-collapse li {
 		display: inline;
 	}
@@ -139,18 +219,18 @@ section#contact {
 
 /* ------------------------ SMALL ------------------------ */
 @media only screen and (max-width:40em) {
+	section#home {
+		min-height:400px;
+	}
+	section#home div.vert_align {
+		min-height:400px;
+	}
 	.project {
 		height:75px;
 		width:100%;
 	}
 
 }
-
-
-
-
-
-
 
 
 

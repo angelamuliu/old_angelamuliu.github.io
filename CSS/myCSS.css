@@ -2,8 +2,9 @@
 
 /*
 salmon: #FF3F40;
-deep-gray: #33363C;
-almost-black: #22262B;
+deep-gray: #33363C; (for home bg)
+almost-black: #22262B; (nav bar)
+sky-blue: #0091FF; (for projects bg)
 */
 
 @font-face {
@@ -158,8 +159,19 @@ div#home h1 {
 
 /* ======================== Projects ======================== */
 
+div#home_projects_transistion {
+	height:50px;
+	/*background-image: url('');*/
+}
 section#projects {
-	background-image: url('img/bcg_slide-3.jpg');
+	/*background-image: url('img/bcg_slide-3.jpg');*/
+	background-color: #0091FF ;
+}
+section#projects h1 {
+	color:white;
+}
+section#projects p {
+	color:white;
 }
 
 /* ------------------------ Gallery Area CSS ------------------------ */
@@ -188,12 +200,18 @@ section#gallery { /* Flexbox container */
 
 /* ======================== About ======================== */
 
+div#projects_about_transistion {
+	height:50px;
+}
 section#about{
 	background-image: url('img/bcg_slide-2.jpg');]
 }
 
 /* ======================== Contact ======================== */
 
+div#about_contact_transistion {
+	height:50px;
+}
 section#contact {
 	background-image: url('img/bcg_slide-3.jpg');
 }
@@ -205,13 +223,6 @@ section#contact {
 /* ------------------------ MEDIUM-LARGE ------------------------ */
 /* min-width: If device width is greater than or equal to... 40em */
 @media only screen and (min-width:40em) {
-	section#home {
-		min-height:600px;
-	}
-	section#home div.vert_align {
-		min-height:600px;
-	}
-
 	.nav-collapse li {
 		display: inline;
 	}
@@ -227,7 +238,14 @@ section#contact {
 		height:100%;
 		background-color:rgba(255,0,0,0.5);
 	}
+	section {
+		min-height:600px;
+	}
 
+	/* HOME */
+	section#home div.vert_align {
+		min-height:600px;
+	}
 	#alien1 {
 		margin-top:20px;
 		margin-left:20%;
@@ -239,6 +257,11 @@ section#contact {
 	#alien3 {
 		margin-top:35px;
 		margin-right:10%;
+	}
+
+	/* PROJECTS */
+	section#gallery {
+		min-height:100px;
 	}
 }
 

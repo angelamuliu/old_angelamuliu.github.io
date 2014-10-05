@@ -48,6 +48,7 @@ h1 {
 	text-transform: uppercase;
 	font-family:Nexa-Bold;
 	margin:0;
+	z-index:5;
 }
 p {
 	font-size:14px;
@@ -90,7 +91,7 @@ div.content {
 div.nav-row {
 	position:fixed;
 	text-align:right;
-	z-index:5;
+	z-index:100;
 	padding-top:8px;
 	padding-bottom:8px;
 	border-bottom:thin ridge rgba(255,255,255,0.15);
@@ -142,6 +143,17 @@ div#home {
 }
 div#home h1 {
 	color: #FF3F40;
+}
+#alien1, #alien2, #alien3 {
+	position: absolute;
+}
+#alien2 {
+	top:0;
+	left:0;
+}
+#alien3 {
+	top:0;
+	right:0;
 }
 
 /* ======================== Projects ======================== */
@@ -215,6 +227,19 @@ section#contact {
 		height:100%;
 		background-color:rgba(255,0,0,0.5);
 	}
+
+	#alien1 {
+		margin-top:20px;
+		margin-left:20%;
+	}
+	#alien2 {
+		margin-top:125px;
+		margin-left:2%;
+	}
+	#alien3 {
+		margin-top:35px;
+		margin-right:10%;
+	}
 }
 
 /* ------------------------ SMALL ------------------------ */
@@ -229,10 +254,34 @@ section#contact {
 		height:75px;
 		width:100%;
 	}
+	#alien1 {
+		position:static;
+		width:50%;
+	}
+	#alien2, #alien3 {
+		display:none;
+	}
 
 }
 
+/* ------------------------ MEDIUM ------------------------ */
+/* Mostly controlling visual elements to adapt to medium screens */
 
+@media only screen and (min-width:40em) and (max-width:60em) {
+	#alien1 {
+		margin-top:20px;
+		margin-left:10%;
+	}
+	#alien2 {
+		margin-left:-145px;
+		margin-top:125px;
+	}
+	#alien3 {
+		margin-top:35px;
+		margin-right:-100px;
+	}
+
+}
 
 
 

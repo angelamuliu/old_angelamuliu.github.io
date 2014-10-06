@@ -9,6 +9,10 @@ $(document).ready( function() {
 		console.log($(window).width());
 	})
 
+	$(".nav-toggle").click( function() {
+		$(".nav-row")[0].style.background="rgba(34,38,43, 1.0)";
+	})
+
 	// A different greeting every time you come back! : )
 	var greetings= ["Aloha!", "Welcome!", "Salutations!", "Wassup?", "Howdy!", "Ahoy!"];
 	var randomnumber = Math.ceil(Math.random()*5);

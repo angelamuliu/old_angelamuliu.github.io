@@ -125,6 +125,7 @@ div.nav-row a {
 div.nav-row a:hover {
 	color: #FF3F40;
 }
+div.nav-row a.nav-toggle:hover { color:white;}
 
 /* ======================== Home ======================== */
 
@@ -159,15 +160,12 @@ div#home h1 {
 
 /* ======================== Projects ======================== */
 
-div#home_projects_transistion {
-	height:50px;
-	/*background-image: url('');*/
-}
 section#projects {
 	/*background-image: url('img/bcg_slide-3.jpg');*/
 	background-color: #0091FF ;
 }
 section#projects h1 {
+	padding-top:30px;
 	color:white;
 }
 section#projects p {
@@ -200,18 +198,12 @@ section#gallery { /* Flexbox container */
 
 /* ======================== About ======================== */
 
-div#projects_about_transistion {
-	height:50px;
-}
 section#about{
 	background-image: url('img/bcg_slide-2.jpg');]
 }
 
 /* ======================== Contact ======================== */
 
-div#about_contact_transistion {
-	height:50px;
-}
 section#contact {
 	background-image: url('img/bcg_slide-3.jpg');
 }
@@ -258,7 +250,6 @@ section#contact {
 		margin-top:35px;
 		margin-right:10%;
 	}
-
 	/* PROJECTS */
 	section#gallery {
 		min-height:100px;

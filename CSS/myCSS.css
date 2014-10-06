@@ -296,7 +296,8 @@ section#contact {
 
 /* ------------------------ SMALL ------------------------ */
 @media only screen and (max-width:40em) {
-	.vert { max-width:80%; }
+	.vert { max-width: 95%; } /* Need that precious real estate! */
+	
 	/* HOME */
 	section#home {
 		min-height:400px;
@@ -305,6 +306,8 @@ section#contact {
 		min-height:400px;
 	}
 	#alien1 {
+		margin-top:0 !important; /* prevent override from medium layout. Just an image, should be ok */
+		margin-left:0 !important; 
 		position:static;
 		width:50%;
 	}

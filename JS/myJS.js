@@ -9,9 +9,10 @@ $(document).ready( function() {
 		console.log($(window).width());
 	})
 
-	$(".nav-toggle").click( function() {
-		$(".nav-row")[0].style.background="rgba(34,38,43, 1.0)";
-	})
+	// Incase user wants to access menu while scrolled to top
+	$(".nav-toggle").click( navtoggle );
+	// Works for touch events too
+	$('.nav-toggle').on({ 'touchstart' : navtoggle });
 
 	// A different greeting every time you come back! : )
 	var greetings= ["Aloha!", "Welcome!", "Salutations!", "Wassup?", "Howdy!", "Ahoy!"];
@@ -36,5 +37,14 @@ $(document).ready( function() {
 		filterterm = "." + $(this).attr("id");
 		$(".project").not(filterterm).hide();
 	})
+
+	// --------------------------------------------
+	// HELPERS
+	// --------------------------------------------
+
+	function navtoggle() {
+		console.log("TEST");
+		$(".nav-row")[0].style.background="rgba(34,38,43, 1.0)";
+	}
 
 })

@@ -35,6 +35,7 @@ $(document).ready( function() {
 	// project area with a matching class name is shown, nonmatches are hidden
 	$("button.filter").click( function() {
 		filterterm = "." + $(this).attr("id");
+		$(".project").show();
 		$(".project").not(filterterm).hide();
 	})
 

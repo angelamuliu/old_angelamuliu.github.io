@@ -68,7 +68,6 @@ div.content {
 	padding-top:20px;
 	padding-bottom:20px;
 }
-
 .hide { display:none;}
 
 .vert_align {
@@ -77,9 +76,7 @@ div.content {
   justify-content: center;
   flex-direction:column;
 }
-.vert {
-	min-width:50%;
-}
+.vert { min-width:50%; }
 
 /* ======================== Foundation fixes ======================== */
 .row {
@@ -162,19 +159,29 @@ div#home h1 {
 
 section#projects {
 	/*background-image: url('img/bcg_slide-3.jpg');*/
+	padding-top:10px;
 	background-color: #0091FF ;
 }
 section#projects h1 {
-	padding-top:30px;
+	padding-top:20px;
 	color:white;
 }
 section#projects p {
 	color:white;
 }
+button.filter {
+	position:relative;
+	z-index:5;
+}
+#cloud1, #cloud2, #coin1, #coin3, #coin4, #coin5, #coin6 {
+	position:absolute;
+}
 
 /* ------------------------ Gallery Area CSS ------------------------ */
 section#gallery { /* Flexbox container */
 	width: 100%;
+	position:relative;
+	z-index:5;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -221,15 +228,7 @@ section#contact {
 	div.nav-row {
 		background:transparent;
 	}
-	.project {
-		padding:0;
-		height:100px;
-	}
-	.project_name {
-		display:none;
-		height:100%;
-		background-color:rgba(255,0,0,0.5);
-	}
+	.vert { max-width:60%; } /* vert controls width of text panels for some cases */
 	section {
 		min-height:600px;
 	}
@@ -250,29 +249,75 @@ section#contact {
 		margin-top:35px;
 		margin-right:10%;
 	}
+
 	/* PROJECTS */
 	section#gallery {
 		min-height:100px;
+	}
+	.project {
+		padding:0;
+		height:100px;
+	}
+	.project_name {
+		display:none;
+		height:100%;
+		background-color:rgba(255,0,0,0.5);
+	}
+	#cloud1 {
+		margin-top: 100px;
+		margin-left: -330px;
+	}
+	#cloud2 {
+		margin-top:300px;
+	}
+	#coin1 {
+		margin-top:70px;
+		margin-left: -1%;
+	}
+	#coin3 {
+		margin-top:135px;
+		margin-left:-5%;
+	}
+	#coin4 {
+		right:0;
+		margin-top:400px;
+		margin-right:-5%;
+	}
+	#coin5 {
+		right:0;
+		margin-top:465px;
+		margin-right:-9%;
+	}
+	#coin6 {
+		margin-top:480px;
+		margin-left:-10%;
 	}
 }
 
 /* ------------------------ SMALL ------------------------ */
 @media only screen and (max-width:40em) {
+	.vert { max-width:80%; }
+	/* HOME */
 	section#home {
 		min-height:400px;
 	}
 	section#home div.vert_align {
 		min-height:400px;
 	}
-	.project {
-		height:75px;
-		width:100%;
-	}
 	#alien1 {
 		position:static;
 		width:50%;
 	}
 	#alien2, #alien3 {
+		display:none;
+	}
+
+	/* PROJECT */
+	.project {
+		height:75px;
+		width:100%;
+	}
+	#cloud1, #cloud2, #coin1, #coin3, #coin4, #coin5, #coin6 {
 		display:none;
 	}
 

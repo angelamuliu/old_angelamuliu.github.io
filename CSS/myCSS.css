@@ -158,7 +158,6 @@ div#home h1 {
 /* ======================== Projects ======================== */
 
 section#projects {
-	/*background-image: url('img/bcg_slide-3.jpg');*/
 	padding-top:10px;
 	background-color: #0091FF ;
 }
@@ -202,13 +201,15 @@ button.filter {
 
 /* ------------------------ Gallery Area CSS ------------------------ */
 section#gallery {
-	width: 100%;
+	/*width: 100%;*/
+	max-width:1000px;
 	position:relative;
 	z-index:5;
 }
 .project { /* individual project box */
-	margin:5px;
-	margin-left:0;
+/*	margin:5px;
+	margin-left:0;*/
+	margin:0;
 	padding:0;
 }
 .project_name{
@@ -273,6 +274,7 @@ section#contact {
 	div#filter_gallery { max-width: 50%; }
 	.project {
 		padding:0;
+		height:250px;
 		width:250px;
 	}
 	.project_name {
@@ -336,7 +338,6 @@ section#contact {
 	.project {
 		height:75px;
 		width:100%;
-		background: 50% 50% no-repeat;
 	}
 	#cloud1, #cloud2, #coin1, #coin3, #coin4, #coin5, #coin6 {
 		display:none;
@@ -362,6 +363,7 @@ section#contact {
 	}
 	.project {
 		width: 200px;
+		height:200px;
 	}
 	div#filter_gallery { max-width: 100%; }
 

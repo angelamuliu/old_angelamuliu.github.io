@@ -11,5 +11,22 @@ $(document).foundation();
 var $container = $("#gallery");
 $container.isotope({
 	itemSelector: ".project",
-	layoutMode:'masonry'
+	// layoutMode:'fitRows',
+	masonry: {
+      columnWidth: $(".project").width(),
+      isFitWidth: true
+    }
 })
+
+// When resize, update the column width
+window.onresize = function() {
+	var $container = $("#gallery");
+	$container.isotope({
+		itemSelector: ".project",
+		// layoutMode:'fitRows',
+		masonry: {
+	      columnWidth: $(".project").width(),
+	      isFitWidth: true
+	    }
+	})
+}

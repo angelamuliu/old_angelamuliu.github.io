@@ -34,9 +34,9 @@ $(document).ready( function() {
 	// Filter is called on a button click, button has id. Anything within
 	// project area with a matching class name is shown, nonmatches are hidden
 	$("button.filter").click( function() {
-		filterterm = "." + $(this).attr("id");
-		$(".project").show();
-		$(".project").not(filterterm).hide();
+		var filterterm = "." + $(this).attr("id");
+		var $container = $("#gallery");
+		$container.isotope({filter: filterterm});
 	})
 
 	// --------------------------------------------

@@ -6,3 +6,10 @@ var nav = responsiveNav(".nav-collapse", {
 });
 
 $(document).foundation();
+
+// Initialize isotope gallery
+var $container = $("#gallery");
+$container.isotope({
+	itemSelector: ".project",
+	layoutMode:'masonry'
+})

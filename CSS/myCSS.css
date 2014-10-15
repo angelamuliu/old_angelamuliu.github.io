@@ -134,6 +134,8 @@ section#home {
 }
 div#greet {
 	min-height:50px;
+	z-index:1;
+	padding-top:20px;
 }
 div#home {
 	text-align:center;
@@ -142,14 +144,21 @@ div#home {
 div#home h1 {
 	color: #FF3F40;
 }
-#alien1, #alien2, #alien3 {
-	position: absolute;
+.aliens {
+	background-image: url('img/aliens.png');
+	background-repeat: repeat-x;
+	z-index:1;
+	height:100px;
 }
-#alien2 {
+#alien1, #galaxy1, #galaxy2 {
+	position: absolute;
+	z-index:0;
+}
+#galaxy1 {
 	top:0;
 	left:0;
 }
-#alien3 {
+#galaxy2 {
 	top:0;
 	right:0;
 }
@@ -162,7 +171,7 @@ section#projects {
 }
 section#projects h1 {
 	padding-top:20px;
-	color:white;
+	color: #FF3F40;
 }
 section#projects p {
 	color:white;
@@ -253,17 +262,16 @@ section#contact {
 	section#home div.vert_align {
 		min-height:600px;
 	}
-	#alien1 {
-		margin-top:20px;
-		margin-left:20%;
+	.aliens {
+		width: 920px;
 	}
-	#alien2 {
-		margin-top:125px;
-		margin-left:2%;
+	#alien1 {display:none;}
+	#galaxy1 {
+		margin-top:-110px;
+		margin-left:-10%;
 	}
-	#alien3 {
-		margin-top:35px;
-		margin-right:10%;
+	#galaxy2 {
+		margin-top:5%;
 	}
 
 	/* PROJECTS */
@@ -320,9 +328,13 @@ section#contact {
 		margin-top:0 !important; /* prevent override from medium layout. Just an image, should be ok */
 		margin-left:0 !important; 
 		position:static;
-		width:50%;
+		width:100px;
 	}
-	#alien2, #alien3 {
+	#galaxy1 {
+		margin-top:-50px;
+		margin-left:-15%;
+	}
+	#galaxy2 {
 		display:none;
 	}
 
@@ -341,21 +353,13 @@ section#contact {
 /* Mostly controlling visual elements to adapt to medium screens */
 
 @media only screen and (min-width:40em) and (max-width:60em) {
-	#alien1 {
-		margin-top:20px;
-		margin-left:10%;
-	}
-	#alien2 {
-		margin-left:-145px;
-		margin-top:125px;
-	}
-	#alien3 {
-		margin-top:35px;
-		margin-right:-100px;
-	}
+	.aliens { width:460px; }
 	.project {
 		width: 200px;
 		height:200px;
+	}
+	#galaxy2 {
+		margin-top:200px;
 	}
 	div#filter_gallery { max-width: 100%; }
 

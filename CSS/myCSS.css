@@ -3,7 +3,7 @@
 /*
 salmon: #FF3F40;
 deep-gray: #33363C; (for home bg)
-almost-black: #22262B; (nav bar)
+almost-black: #22262B; (nav bar, project bg)
 */
 
 @font-face {
@@ -167,7 +167,7 @@ div#home h1 {
 
 section#projects {
 	padding-top:10px;
-	background-color: #33363C;
+	background-color: #22262b;
 }
 section#projects h1 {
 	padding-top:20px;
@@ -330,6 +330,7 @@ section#contact {
 		position:static;
 		width:100px;
 	}
+	.aliens { display:none;}
 	#galaxy1 {
 		margin-top:-50px;
 		margin-left:-15%;

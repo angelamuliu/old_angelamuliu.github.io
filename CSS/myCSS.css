@@ -76,6 +76,7 @@ div.content {
   flex-direction:column;
 }
 .vert { min-width:50%; }
+div.separator { text-align: center;}
 
 /* ======================== Foundation fixes ======================== */
 .row {
@@ -162,6 +163,7 @@ div#home h1 {
 	top:0;
 	right:0;
 }
+div.separator#home_projects { background-color: #33363C;}
 
 /* ======================== Projects ======================== */
 

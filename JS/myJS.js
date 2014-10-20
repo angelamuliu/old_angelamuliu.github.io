@@ -1,8 +1,6 @@
 
 
 
-
-
 $(document).ready( function() {
 
 	// Change color of scroll to an almost black as I go down

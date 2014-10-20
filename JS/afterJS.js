@@ -4,6 +4,7 @@
 function gallery_hover() {
 	$(".project_name").hide();
 	if ($(window).width() > 640) { // Web: Hover enabled for project gallery
+		$(".mob_proj").hide();
 		$(".project").hover(
 		function() {
 			$(this).find(".project_name").fadeIn(300);
@@ -11,7 +12,7 @@ function gallery_hover() {
 			$(this).find(".project_name").fadeOut(200);
 		})
 	} else {
-		$(".project_name").show(); // Mobile: Don't deal with hover, just show it
+		$(".mob_proj").show(); // Mobile: Don't deal with hover, show alternative
 	}
 }
 

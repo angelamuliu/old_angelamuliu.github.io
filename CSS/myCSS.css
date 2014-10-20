@@ -222,7 +222,7 @@ section#gallery {
 	margin:5px;
 	padding:0;
 }
-.project_name{
+.project_name, .mob_proj{
 	height:100%;
 	width:100%;
 	text-align:center;

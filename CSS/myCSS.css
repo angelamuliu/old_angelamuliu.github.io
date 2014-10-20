@@ -359,13 +359,21 @@ section#contact {
 /* Mostly controlling visual elements to adapt to medium screens */
 
 @media only screen and (min-width:40em) and (max-width:60em) {
+	
+	/* HOME */
+	section#home div.vert_align { /* Default to mobile, remove web padding*/
+		padding-top:0px;
+		padding-bottom:0px;
+	}
 	.aliens { width:460px; }
+	#galaxy2 {
+		margin-top:200px;
+	}
+
+	/* PROJECT*/
 	.project {
 		width: 200px;
 		height:200px;
-	}
-	#galaxy2 {
-		margin-top:200px;
 	}
 	div#filter_gallery { max-width: 100%; }
 

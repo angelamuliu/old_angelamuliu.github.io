@@ -82,6 +82,11 @@ div.separator img {
 	position: relative;
 	z-index:2;
 }
+hr {
+	border-bottom: solid #33363C;
+	border-top: solid #FF3F40;
+	border-width: 1px 0 2px;
+}
 
 /* ======================== Foundation fixes ======================== */
 .row {

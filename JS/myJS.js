@@ -7,7 +7,6 @@ $(document).ready( function() {
 	$(window).scroll( function() {
 		var scrollposition = $(window).scrollTop();
 		$(".nav-row")[0].style.background="rgba(34,38,43," + scrollposition/120 + ")";
-		console.log($(window).width());
 	})
 
 	// Incase user wants to access menu while scrolled to top
@@ -32,8 +31,8 @@ $(document).ready( function() {
 	// HELPERS
 	// --------------------------------------------
 
+	// Set bg of nav to dark when toggled
 	function navtoggle() {
-		console.log("TEST");
 		$(".nav-row")[0].style.background="rgba(34,38,43, 1.0)";
 	}
 

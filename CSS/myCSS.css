@@ -240,9 +240,17 @@ section#gallery {
 div.separator#projects_about{ background-color: #33363C;}
 div.separator#projects_about img { margin-top:-5px;}
 
+section#about h1 { padding-top:20px; }
 section#about{
 	padding-top:10px;
 	background-color:#33363C;
+}
+section#about p {
+	color:white;
+}
+
+img.stat_tile {
+	float:left;
 }
 
 /* ======================== Contact ======================== */
@@ -261,9 +269,6 @@ section#contact {
 	.nav-collapse li { display: inline; }
 	div.nav-row { background:transparent; }
 	.vert { max-width:60%; } /* vert controls width of text panels for some cases */
-	section {
-		/*min-height:600px;*/
-	}
 
 	/* HOME */
 	section#home div.vert_align {
@@ -316,6 +321,11 @@ section#contact {
 		margin-top:480px;
 		margin-left:-10%;
 	}
+
+	/* ABOUT */
+	section#about p { width: 50%; }
+	section#my_stats { width: 50%; }
+
 }
 
 /* ------------------------ SMALL ------------------------ */
@@ -352,6 +362,10 @@ section#contact {
 	#coin1, #coin3, #coin4, #coin5, #coin6 {
 		display:none;
 	}
+
+	/* ABOUT */
+	section#about p { width: 80%;}
+	section#my_stats { width: 80%; }
 
 }
 

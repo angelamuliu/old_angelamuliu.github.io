@@ -51,6 +51,10 @@ h1 {
 	z-index:5;
 	color: #FF3F40;
 }
+h3 {
+	font-family: Nexa-Light;
+	color:wheat;
+}
 p {
 	font-size:14px;
 	font-family:Aleo-Light;
@@ -60,8 +64,6 @@ em {
 	font-family:Aleo-LightItalic;
 }
 section {
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
 	width:100%;
 }
 div.content {
@@ -184,7 +186,7 @@ section#projects strong {
 	position:relative;
 	z-index:5;
 	margin-bottom:15px;
-	color:white;
+	color:wheat;
 	font-family:Nexa-Bold;
 }
 div#filter_gallery { 
@@ -257,6 +259,12 @@ img.stat_tile {
 
 section#contact {
 	background-color: #22262B;
+}
+section#contact li {
+	color: wheat;
+	list-style:none;
+	font-size:14px;
+	font-family:Aleo-Light;
 }
 
 

@@ -13,6 +13,7 @@ function gallery_hover() {
 		})
 	} else {
 		$(".mob_proj").show(); // Mobile: Don't deal with hover, show alternative
+		$(".project").hover(function() {} ); // Reset hover listener to an empty function
 	}
 }
 

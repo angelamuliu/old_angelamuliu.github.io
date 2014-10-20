@@ -78,6 +78,10 @@ div.content {
 }
 .vert { min-width:50%; }
 div.separator { text-align: center;}
+div.separator img {
+	position: relative;
+	z-index:2;
+}
 
 /* ======================== Foundation fixes ======================== */
 .row {
@@ -166,6 +170,7 @@ div.separator#home_projects { background-color: #33363C;}
 /* ======================== Projects ======================== */
 
 section#projects {
+	position:relative;
 	padding-top:10px;
 	padding-bottom:50px;
 	background-color: #22262b;
@@ -228,18 +233,18 @@ section#gallery {
 
 /* ======================== About ======================== */
 
-div.separator#projects_about{ background-color: white;}
+div.separator#projects_about{ background-color: #33363C;}
 div.separator#projects_about img { margin-top:-5px;}
 
 section#about{
 	padding-top:10px;
-	background-color:white;
+	background-color:#33363C;
 }
 
 /* ======================== Contact ======================== */
 
 section#contact {
-	background-color:#FF3F40;
+	background-color: #22262B;
 }
 
 
@@ -258,7 +263,8 @@ section#contact {
 
 	/* HOME */
 	section#home div.vert_align {
-		min-height:600px;
+		padding-top:200px;
+		padding-bottom:100px;
 	}
 	.aliens {
 		width: 920px;
@@ -314,10 +320,8 @@ section#contact {
 	
 	/* HOME */
 	section#home {
-		min-height:400px;
-	}
-	section#home div.vert_align {
-		min-height:400px;
+		padding-top:100px;
+		padding-bottom:30px;
 	}
 	#alien1 {
 		display: inline;

@@ -82,11 +82,7 @@ div.separator img {
 	position: relative;
 	z-index:2;
 }
-hr {
-	border-bottom: solid #33363C;
-	border-top: solid #FF3F40;
-	border-width: 1px 0 2px;
-}
+hr { border-color: gray; }
 
 /* ======================== Foundation fixes ======================== */
 .row {
@@ -210,6 +206,9 @@ button.filter {
 	margin-bottom:20px;
 	text-transform: uppercase;
 	font-family:Nexa-Light;
+}
+button.selected_filter {
+	color:#FF3F40;
 }
 #coin1, #coin3, #coin4, #coin5, #coin6 {
 	position:absolute;

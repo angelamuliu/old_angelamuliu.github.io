@@ -22,6 +22,8 @@ $(document).ready( function() {
 	// Filter is called on a button click, button has id. Anything within
 	// project area with a matching class name is shown, nonmatches are hidden
 	$("button.filter").click( function() {
+		$("button.filter").removeClass("selected_filter");
+		$(this).addClass("selected_filter");
 		var filterterm = "." + $(this).attr("id");
 		var $container = $("#gallery");
 		$container.isotope({filter: filterterm});

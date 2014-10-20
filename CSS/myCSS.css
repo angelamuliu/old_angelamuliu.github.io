@@ -49,6 +49,7 @@ h1 {
 	font-family:Nexa-Bold;
 	margin:0;
 	z-index:5;
+	color: #FF3F40;
 }
 p {
 	font-size:14px;
@@ -142,9 +143,6 @@ div#home {
 	text-align:center;
 	color:white;
 }
-div#home h1 {
-	color: #FF3F40;
-}
 .aliens {
 	background-image: url('img/aliens.png');
 	background-repeat: repeat-x;
@@ -169,12 +167,10 @@ div.separator#home_projects { background-color: #33363C;}
 
 section#projects {
 	padding-top:10px;
+	padding-bottom:50px;
 	background-color: #22262b;
 }
-section#projects h1 {
-	padding-top:20px;
-	color: #FF3F40;
-}
+section#projects h1 { padding-top:20px; }
 section#projects p {
 	color:white;
 }
@@ -232,14 +228,18 @@ section#gallery {
 
 /* ======================== About ======================== */
 
+div.separator#projects_about{ background-color: white;}
+div.separator#projects_about img { margin-top:-5px;}
+
 section#about{
+	padding-top:10px;
 	background-color:white;
 }
 
 /* ======================== Contact ======================== */
 
 section#contact {
-	background-image: url('img/bcg_slide-3.jpg');
+	background-color:#FF3F40;
 }
 
 
@@ -253,7 +253,7 @@ section#contact {
 	div.nav-row { background:transparent; }
 	.vert { max-width:60%; } /* vert controls width of text panels for some cases */
 	section {
-		min-height:600px;
+		/*min-height:600px;*/
 	}
 
 	/* HOME */
@@ -273,6 +273,7 @@ section#contact {
 	}
 
 	/* PROJECTS */
+	#projects p { width:50%; }
 	section#gallery {
 		min-height:100px;
 	}
@@ -339,6 +340,7 @@ section#contact {
 		height:100px;
 		width: 100px;
 	}
+	#projects p { width:80%; }
 	#coin1, #coin3, #coin4, #coin5, #coin6 {
 		display:none;
 	}

@@ -223,11 +223,11 @@ section#gallery {
 	padding:0;
 }
 .project_name{
+	height:100%;
 	width:100%;
 	text-align:center;
-	padding-top:15px;
-	padding-left:0;
-	padding-right:0;
+	color: white;
+	font-family:Aleo-Light;
 }
 
 /* ======================== About ======================== */
@@ -249,12 +249,8 @@ section#contact {
 /* ------------------------ MEDIUM-LARGE ------------------------ */
 /* min-width: If device width is greater than or equal to... 40em */
 @media only screen and (min-width:40em) {
-	.nav-collapse li {
-		display: inline;
-	}
-	div.nav-row {
-		background:transparent;
-	}
+	.nav-collapse li { display: inline; }
+	div.nav-row { background:transparent; }
 	.vert { max-width:60%; } /* vert controls width of text panels for some cases */
 	section {
 		min-height:600px;
@@ -286,11 +282,7 @@ section#contact {
 		height:250px;
 		width:250px;
 	}
-	.project_name {
-		display:none;
-		height:100%;
-		background-color:rgba(255,0,0,0.5);
-	}
+	.project_name { background-color:rgba(255, 63, 64, 0.8); }
 	#coin1 {
 		margin-top:70px;
 		margin-left: -1%;
@@ -327,6 +319,7 @@ section#contact {
 		min-height:400px;
 	}
 	#alien1 {
+		display: inline;
 		margin-top:0 !important; /* prevent override from medium layout. Just an image, should be ok */
 		margin-left:0 !important; 
 		position:static;

@@ -1,5 +1,8 @@
 
 
+
+
+
 $(document).ready( function() {
 
 	// Change color of scroll to an almost black as I go down
@@ -18,18 +21,6 @@ $(document).ready( function() {
 	var greetings= ["Aloha!", "Welcome!", "Salutations!", "Wassup?", "Howdy!", "Ahoy!"];
 	var randomnumber = Math.ceil(Math.random()*5);
 	$("#greet").html("<h1>"+greetings[randomnumber]+"</h1>");
-
-	// Gallery hover effect
-	if ($(window).width() >= 600) { // Web: Hover enabled for project gallery
-		$(".project").hover(
-		function() {
-			$(this).find(".project_name").fadeIn(300);
-		}, function() {
-			$(this).find(".project_name").fadeOut(200);
-		})
-	} else {
-		$(".project_name").show(); // Mobile: Don't deal with hover, just show it
-	}
 
 	// Filter is called on a button click, button has id. Anything within
 	// project area with a matching class name is shown, nonmatches are hidden

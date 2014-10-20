@@ -1,5 +1,21 @@
 
 
+// Gallery hover effect
+function gallery_hover() {
+	$(".project_name").hide();
+	if ($(window).width() > 640) { // Web: Hover enabled for project gallery
+		$(".project").hover(
+		function() {
+			$(this).find(".project_name").fadeIn(300);
+		}, function() {
+			$(this).find(".project_name").fadeOut(200);
+		})
+	} else {
+		$(".project_name").show(); // Mobile: Don't deal with hover, just show it
+	}
+}
+
+
 // Responsive Nav
 var nav = responsiveNav(".nav-collapse", {
   label: "<i class=\"fa fa-bars\"></i>", // Label for the navigation toggle
@@ -27,9 +43,11 @@ $container.isotope({
 })
 
 // On resize or orientation change, check and update the column width
+// Also check if continue to use gallery hover effect
 $( window ).on( "orientationchange", function() {
-	console.log("CHANGED!");
-  var $container = $("#gallery");
+	console.log("Orientation change");
+	gallery_hover();
+	var $container = $("#gallery");
 	$container.isotope({
 		itemSelector: ".project",
 		// layoutMode:'fitRows',
@@ -40,6 +58,8 @@ $( window ).on( "orientationchange", function() {
 	})
 });
 window.onresize = function() {
+	console.log("Window resize");
+	gallery_hover();
 	var $container = $("#gallery");
 	$container.isotope({
 		itemSelector: ".project",

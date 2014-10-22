@@ -1,136 +1,5 @@
-/* ======================== Fonts and Color Sets ======================== */
 
-/*
-salmon: #FF3F40;
-deep-gray: #33363C; (for home bg)
-almost-black: #22262B; (nav bar, project bg)
-*/
-
-@font-face {
-	font-family:Aleo-Light;
-	src: url(fonts/Aleo-Light.otf);
-}
-@font-face {
-	font-family:Aleo-LightItalic;
-	src: url(fonts/Aleo-LightItalic.otf);
-}
-@font-face {
-    font-family: Aleo-Regular;
-    src: url(fonts/Aleo-Regular.otf);
-}
-@font-face {
-	font-family:Aleo-Italic;
-	src: url(fonts/Aleo-Italic.otf);
-}
-@font-face {
-	font-family:Aleo-Bold;
-	src: url(fonts/Aleo-Bold.otf);
-}
-@font-face {
-	font-family:Aleo-BoldItalic;
-	src: url(fonts/Aleo-BoldItalic.otf);
-}
-@font-face {
-	font-family: Nexa-Bold;
-	src: url(fonts/Nexa-Bold.otf);
-}
-@font-face {
-	font-family: Nexa-Light;
-	src: url(fonts/Nexa-Light.otf);
-}
-
-/* ======================== General Styling ======================== */
-
-body {
-	width:100%;
-}
-h1 {
-	text-transform: uppercase;
-	font-family:Nexa-Bold;
-	margin:0;
-	z-index:5;
-	color: #FF3F40;
-}
-h3 {
-	font-family: Nexa-Light;
-	color:wheat;
-}
-p {
-	font-size:14px;
-	font-family:Aleo-Light;
-}
-em {
-	letter-spacing:0.5px;
-	font-family:Aleo-LightItalic;
-}
-section {
-	width:100%;
-}
-div.content {
-	padding-top:20px;
-	padding-bottom:20px;
-}
-.hide { display:none;}
-
-.vert_align {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction:column;
-}
-.vert { min-width:50%; }
-div.separator { text-align: center;}
-div.separator img {
-	position: relative;
-	z-index:2;
-}
-hr { border-color: gray; }
-
-/* ======================== Foundation fixes ======================== */
-.row {
-	max-width:100%;
-	margin:0;
-}
-
-/* ======================== Nav styling ======================== */
-
-div.nav-row {
-	position:fixed;
-	text-align:right;
-	z-index:100;
-	padding-top:8px;
-	padding-bottom:8px;
-	border-bottom:thin ridge rgba(255,255,255,0.15);
-}
-div.nav-row a.nav-toggle {
-	font-size: 2em;
-	right: 0;
-	margin:10px;
-	margin-top:5px;
-}
-.nav-collapse.opened {
-	max-height:550px;
-}
-.nav-collapse.opened a {
-	margin-left:10px;
-}
-a#home {
-	float:left;
-}
-.nav-collapse li {
-	padding:10px;
-}
-div.nav-row a {
-	font-family:Nexa-Light;
-	color:white;
-	letter-spacing:0.2px;
-	font-size:12px;
-	text-transform:uppercase;
-}
-div.nav-row a:hover {
-	color: #FF3F40;
-}
-div.nav-row a.nav-toggle:hover { color:white;}
+/* CSS for the front page */
 
 /* ======================== Home ======================== */
 
@@ -255,28 +124,12 @@ img.stat_tile {
 	float:left;
 }
 
-/* ======================== Contact ======================== */
-
-section#contact {
-	background-color: #22262B;
-}
-section#contact li {
-	color: wheat;
-	list-style:none;
-	font-size:14px;
-	font-family:Aleo-Light;
-}
-
-
 
 /* ======================== CSS For different devices! ======================== */
 
 /* ------------------------ MEDIUM-LARGE ------------------------ */
 /* min-width: If device width is greater than or equal to... 40em */
 @media only screen and (min-width:40em) {
-	.nav-collapse li { display: inline; }
-	div.nav-row { background:transparent; }
-	.vert { max-width:60%; } /* vert controls width of text panels for some cases */
 
 	/* HOME */
 	section#home {
@@ -338,8 +191,7 @@ section#contact li {
 
 /* ------------------------ SMALL ------------------------ */
 @media only screen and (max-width:40em) {
-	.vert { max-width: 95%; } /* Need that precious real estate! */
-	
+
 	/* HOME */
 	section#home {
 		padding-top:100px;

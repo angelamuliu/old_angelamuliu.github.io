@@ -1,0 +1,44 @@
+
+section#subpage {
+	background-color:#33363C;
+}
+
+section#subpage p {
+	color:white;
+}
+
+.subpage_header_img {
+	height:100px;
+	width:100%;
+}
+
+
+/* ======================== CSS For different devices! ======================== */
+
+/* ------------------------ MEDIUM-LARGE ------------------------ */
+/* min-width: If device width is greater than or equal to... 40em */
+@media only screen and (min-width:40em) {
+	#subpage p { width:50%; }
+
+}
+
+/* ------------------------ SMALL ------------------------ */
+@media only screen and (max-width:40em) {
+	#subpage p { width: 80%;}
+
+}
+
+/* ------------------------ MEDIUM ------------------------ */
+/* Mostly controlling visual elements to adapt to medium screens */
+
+@media only screen and (min-width:40em) and (max-width:60em) {
+
+
+}
+
+
+
+
+
+
+

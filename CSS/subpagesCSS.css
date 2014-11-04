@@ -3,6 +3,18 @@ em, strong {
 	color:wheat;
 }
 
+a {
+	color: white;
+	font-family:Aleo-Light;
+}
+a:hover {
+	color:#FF3F40;
+}
+
+a.icon_link {
+	margin-bottom:1.25rem;
+}
+
 section#subpage p.tools {
 	color:#FF3F40;
 }
@@ -30,6 +42,9 @@ section#gallery {
 	margin:5px;
 	padding:0;
 }
+iframe {
+	margin-bottom:1.25rem;
+}
 
 
 /* ======================== CSS For different devices! ======================== */
@@ -44,6 +59,11 @@ section#gallery {
 		height: 250px;
 	}
 
+	iframe {
+		width: 560px;
+		height:315px;
+	}
+
 
 }
 
@@ -56,6 +76,11 @@ section#gallery {
 		height: 100px;
 	}
 
+	iframe {
+		width: 100%;
+		height: 315px;
+	}
+
 }
 
 /* ------------------------ MEDIUM ------------------------ */
@@ -66,6 +91,12 @@ section#gallery {
 	.subgal {
 		width: 200px;
 		height: 200px;
+	}
+
+
+	iframe {
+		width: 560px;
+		height: 315px;
 	}
 }
 

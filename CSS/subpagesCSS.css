@@ -1,4 +1,12 @@
 
+em, strong {
+	color:wheat;
+}
+
+section#subpage p.tools {
+	color:#FF3F40;
+}
+
 section#subpage {
 	background-color: #22262b;
 }
@@ -7,6 +15,7 @@ h1 {
 	padding-top:60px;
 }
 section#subpage p {
+	margin-top:1.25rem;
 	color:white;
 }
 section#gallery {

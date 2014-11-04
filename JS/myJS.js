@@ -29,6 +29,12 @@ $(document).ready( function() {
 		$container.isotope({filter: filterterm});
 	})
 
+	// fancybox gallery widget, used in subpages
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+
 	// --------------------------------------------
 	// HELPERS
 	// --------------------------------------------

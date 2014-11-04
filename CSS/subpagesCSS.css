@@ -2,7 +2,10 @@
 section#subpage {
 	background-color: #22262b;
 }
-
+h1 { 
+	text-align:center;
+	padding-top:60px;
+}
 section#subpage p {
 	color:white;
 }

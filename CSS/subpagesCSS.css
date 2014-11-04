@@ -1,15 +1,34 @@
 
+em, strong {
+	color:wheat;
+}
+
+section#subpage p.tools {
+	color:#FF3F40;
+}
+
 section#subpage {
 	background-color: #22262b;
 }
-
+h1 { 
+	text-align:center;
+	padding-top:60px;
+}
 section#subpage p {
+	margin-top:1.25rem;
 	color:white;
 }
-
-.subpage_header_img {
-	height:100px;
-	width:100%;
+section#gallery {
+	max-width:1000px; 
+	/* isotope makes it so that child width sum is parent's width. But here's the cap */
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	z-index:5;
+}
+.subgal { /* individual gallery box */
+	margin:5px;
+	padding:0;
 }
 
 
@@ -20,11 +39,22 @@ section#subpage p {
 @media only screen and (min-width:40em) {
 	#subpage p { width:50%; }
 
+	.subgal {
+		width: 250px;
+		height: 250px;
+	}
+
+
 }
 
 /* ------------------------ SMALL ------------------------ */
 @media only screen and (max-width:40em) {
 	#subpage p { width: 80%;}
+
+	.subgal {
+		width: 100px;
+		height: 100px;
+	}
 
 }
 
@@ -33,7 +63,10 @@ section#subpage p {
 
 @media only screen and (min-width:40em) and (max-width:60em) {
 
-
+	.subgal {
+		width: 200px;
+		height: 200px;
+	}
 }
 
 

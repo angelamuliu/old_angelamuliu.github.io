@@ -10,13 +10,15 @@
 	<link rel="stylesheet" href="../CSS/foundation.css">
 	<link rel="stylesheet" href="../CSS/generalCSS.css">
 	<link rel="stylesheet" href="../CSS/subpagesCSS.css">
+	<link rel="stylesheet" href="../JS/fancyBox2_gallery/jquery.fancybox.css">
 
 	<script src="../JS/responsive-nav.js"></script>
     <script src="../JS/vendor/modernizr.js"></script>
     <script src="../JS/vendor/jquery.js"></script>
-    <script src="../JS/jquery.mobile.custom/jquery.mobile.custom.js"></script>
     <script src="../JS/isotope.pkgd.js"></script>
-    <script src="../JS/myJS.js"></script>
+    <script src="../JS/myJS_sub.js"></script>
+    <script src="../JS/fancyBox2_gallery/jquery.fancybox.js"></script>
+
 </head>
 <body>
 
@@ -40,10 +42,31 @@
 			<a id="home"></a>
 			<div class="content small-12 medium-10 small-centered columns" id="subpage">
 
-				<div class="vert_align">
-					<h1>Name of subpage</h1>
-					<p>What doesn't kill you makes you stronger. The projects I've worked on have given me experience that allows me to do higher level work. From playful games to data visualization to web design - I'm a curious soul who loves exploring new areas.</p>
+				<div class="vert_align subpage_intro">
+					<h1>Herd Run</h1>
+					<em>Spring 2013</em>
+					<p> <strong>Python, pygame, OO programming</strong><br />
+						Herd Run is  my term project for the CMU course 15-112. It is an action game with strategic elements mixed in, with the goal being having the highest score. Those are the basics - I'd recommend watching this video to get the big picture.
+					</p>
+					<iframe src="https://www.youtube.com/watch?v=CRF9Pz1V4vM&list=UU4e7Oujk0poF0AMC-j8yblA"></iframe>
 				</div>
+				<hr />
+
+				<!-- Gallery -->
+				<section id="gallery">
+					<a class="fancybox" rel="gallery1" href="http://farm6.staticflickr.com/5471/9036958611_fa1bb7f827_b.jpg" title="Test Gallery Item's caption">
+						<div style="background: url('http://farm6.staticflickr.com/5471/9036958611_fa1bb7f827_b.jpg') 50% 50% no-repeat;" class="subgal">
+						</div>
+					</a>
+					<a class="fancybox" rel="gallery1" href="http://farm6.staticflickr.com/5471/9036958611_fa1bb7f827_b.jpg" title="Test Gallery Item's caption">
+						<div style="background: url('http://farm6.staticflickr.com/5471/9036958611_fa1bb7f827_b.jpg') 50% 50% no-repeat;" class="subgal">
+						</div>
+					</a>
+				</section>
+
+
+
+
 			</div>
 
 		</section>
@@ -52,15 +75,9 @@
 
 
 
-		<div class="row">
-			<a id="contact"></a>
-			<section id="contact">
-				<a id="contact"></a>
-				<div class="content small-12 medium-10 small-centered columns" id="contact">
-					<p>Description</p>
-				</div>
-			</section>
-		</div>
+	<footer>
+		fill later w/ contact
+	</footer>
 
 	</div>
 
@@ -71,7 +88,7 @@
 
 
 <script src="../JS/foundation.min.js"></script>
-<script src="../JS/afterJS.js"></script>
+<script src="../JS/afterJS_sub.js"></script>
 
 </body>
 </html>
